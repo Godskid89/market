@@ -16,31 +16,33 @@ module.exports = {
   // List of all supported chainIds. Used to populate the Chains user preferences list.
   chainIdsSupported: [3, 4, 80001, 1287],
 
-  infuraProjectId: process.env.NEXT_PUBLIC_INFURA_PROJECT_ID || 'xxx',
+  infuraProjectId:
+    process.env.NEXT_PUBLIC_INFURA_PROJECT_ID ||
+    'b30ca4f2d2044a95bcde092a9e98891e',
 
   // The ETH address the marketplace fee will be sent to.
   marketFeeAddress:
     process.env.NEXT_PUBLIC_MARKET_FEE_ADDRESS ||
-    '0x9984b2453eC7D99a73A5B3a46Da81f197B753C8d',
+    '0x3860e27633cAF6b8dc36cE71226744F912cEEB2e',
   // publisher market fee that is taken upon ordering an asset, it is an absolute value, it is declared on erc20 creation
   publisherMarketOrderFee:
-    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE || '0',
+    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE || '1',
   // fee recieved by the publisher market when a dt is swaped from a pool, percent
   publisherMarketPoolSwapFee:
-    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_POOL_SWAP_FEE || '0',
+    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_POOL_SWAP_FEE || '1',
   // fee recieved by the publisher market when a dt is bought from a fixed rate exchange, percent
   publisherMarketFixedSwapFee:
-    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_FIXED_SWAP_FEE || '0',
+    process.env.NEXT_PUBLIC_PUBLISHER_MARKET_FIXED_SWAP_FEE || '1',
 
   // consume market fee that is taken upon ordering an asset, it is an absolute value, it is specified on order
   consumeMarketOrderFee:
-    process.env.NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE || '0',
+    process.env.NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE || '1',
   // fee recieved by the consume market when a dt is swaped from a pool, percent
   consumeMarketPoolSwapFee:
-    process.env.NEXT_PUBLIC_CONSUME_MARKET_POOL_SWAP_FEE || '0',
+    process.env.NEXT_PUBLIC_CONSUME_MARKET_POOL_SWAP_FEE || '1',
   // fee recieved by the consume market when a dt is bought from a fixed rate exchange, percent
   consumeMarketFixedSwapFee:
-    process.env.NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE || '0',
+    process.env.NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE || '1',
 
   // Used for conversion display, can be whatever coingecko API supports
   // see: https://api.coingecko.com/api/v3/simple/supported_vs_currencies
@@ -68,7 +70,8 @@ module.exports = {
   },
 
   // Wallets
-  portisId: process.env.NEXT_PUBLIC_PORTIS_ID || 'xxx',
+  portisId:
+    process.env.NEXT_PUBLIC_PORTIS_ID || '68e5f31b-5822-4222-8a6d-7aa34e4c2ab9',
 
   // Used to show or hide the fixed, dynamic or free price options
   // tab to publishers during the price creation.
